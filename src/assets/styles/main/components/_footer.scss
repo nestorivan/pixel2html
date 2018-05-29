@@ -1,3 +1,17 @@
 .footer{
   background:$darkest-gray;
+  color:$light-gray;
+  padding:50px 0 80px;
+  &__logo-container{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  &__logo-background{
+    position: relative;
+  }
+  &__logo{
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+  }
 }

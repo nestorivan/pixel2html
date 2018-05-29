@@ -8,15 +8,15 @@
 // but for now its disabled
 // make sure your css is inside this :global
 // Happy Styling! Pixel2HTML
+//global:start
 :global {
-  //global:start
-  @import './grid/flex-grid.scss';
-  * {
-    font-family: 'Roboto', sans-serif !important;
-    box-sizing: border-box;
-  } //global:end
-  // screens:start
-  //screens:end
-  // components:start
-  @import './components/_components.scss'; // components:end
+    @import './grid/flex-grid.scss';
+    * {
+        font-family: 'Roboto', sans-serif !important;
+        box-sizing: border-box;
+    } //global:end
+    // screens:start
+    //screens:end
+    // components:start
+    @import './components/_components.scss'; // components:end
 }

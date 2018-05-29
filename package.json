@@ -23,6 +23,7 @@
     "flex-grill": "^0.0.2",
     "fs-path": "^0.0.24",
     "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
     "gulp-zip": "^4.1.0",
     "jquery": "^3.3.1",
     "slick-carousel": "^1.8.1",
