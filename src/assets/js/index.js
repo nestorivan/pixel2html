@@ -2,7 +2,7 @@
 // read more about modules here:
 // http://wesbos.com/javascript-modules/
 import $ from 'jquery';
-import slick from 'slick-carousel';
+import 'slick-carousel';
 import allTheColors from './app';
 import pricing from './pricing';
 

@@ -31,7 +31,7 @@ module.exports = {
       icons: 'dist/assets/icons',
       images: 'dist/assets/images',
       scripts: 'dist/assets/js',
-      styles: 'dist/assets/css',
+      styles: 'dist/assets/css'
     }
   },
   project: {
@@ -39,6 +39,7 @@ module.exports = {
     cssVendorFile: 'src/assets/styles/vendor/vendor.scss',
     jsMainFile: 'src/assets/js/index.js',
     fontFiles: [
+      'node_modules/slick-carousel/slick/fonts/**/*',
       'src/assets/fonts/**/*'
     ]
   },
