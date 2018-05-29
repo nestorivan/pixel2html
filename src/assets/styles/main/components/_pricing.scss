@@ -1,0 +1,89 @@
+.pricing {
+  background-color: $light-gray;
+  &__divider {
+    height: 1px;
+    width: 100%;
+    background-color: $btn-outline-border;
+  }
+  &__plans-container {
+    position: relative;
+    max-width: 83%;
+    margin: 0 auto;
+    top: 150px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  &__plan-name {
+    text-transform: uppercase;
+  }
+  &__plan-cost{
+    margin-bottom: 0;
+  }
+  &__plan-monthly{
+    color:$text-gray;
+  }
+  &__plan {
+    background: white;
+    padding: 30px;
+    display: inline-block;
+    flex-grow: 1;
+    @include cs-xs{
+      margin-top:10px;
+    }
+    @include xs-sm{
+      margin-top:10px;
+    }
+    @include sm-md{
+      margin-top:10px;
+    }
+    &.first {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+    &.last {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    &:hover {
+      background-color: $blue;
+      transition: background-color .5s linear;
+      color: white !important;
+    }
+  }
+  &__plan-list-container{
+    padding-top: 30px;
+    min-height: 400px;
+  }
+  &__plan-list {
+    list-style-type: none;
+    padding: 0;
+    li {
+      margin-bottom: 40px;
+      &.disabled {
+        color: $text-gray;
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 6px;
+          height: 12px;
+          margin-right: 15px;
+        }
+      }
+      &.includes {
+        &::before {
+          /*Add another block-level blank space*/
+          content: '';
+          display: inline-block;
+          /*Make it a small rectangle so the border will create an L-shape*/
+          width: 6px;
+          height: 12px;
+          margin-right: 15px;
+          /*Add a white border on the bottom and left, creating that 'L' */
+          border: solid $green;
+          border-width: 0 2px 2px 0;
+          /*Rotate the L 45 degrees to turn it into a checkmark*/
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

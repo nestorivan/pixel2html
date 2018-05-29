@@ -1,0 +1,12 @@
+.banner {
+  margin-top: 100px;
+  padding-top: 118px;
+  &__image {
+    margin-top: 75px;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}

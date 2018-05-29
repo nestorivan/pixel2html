@@ -1,0 +1,84 @@
+//start:colors
+$light-gray: #f9f9f9;
+$dark-gray: #5e6977;
+$darkest-gray:#545e6b;
+$blue: #39add1;
+$green: #7dc855;
+$link: #358ed7;
+$text: #49484d;
+$btn-outline-border:#e1e8ee;
+$text-gray: #86939e;
+$white:white;
+//end:colors
+
+$colors:(
+  light-gray:$light-gray,
+  dark-gray:$dark-gray,
+  blue:$blue,
+  green:$green,
+  link:$link,
+  text:$text,
+  btn-outline-bord:$btn-outline-border,
+  text-gray:$text-gray,
+  white: $white,
+);
+
+
+//start:font-sizes
+$font-sizes:(
+  lg:(
+    h1:(font-size:72px, font-weight:300),
+    h3:(font-size:32px,font-weight:300,margin:0),
+    h5:(font-size:24px,font-weight:500,margin:0),
+    p: (font-size:19px,font-weight:300,margin:0,line-height:25px)
+  ),
+  md:(
+    h1:(font-size: 52px, font-weight:300),
+    h3:(font-size:22px,font-weight:300, margin:0),
+    h5:(font-size:18px,font-weight:500,margin:0),
+    p: (font-size:16px,font-weight:300,margin:0,line-height:25px)
+  ),
+  sm:(
+    h1:(font-size: 52px, font-weight:300, ),
+    h3:(font-size:22px,font-weight:300,margin:0),
+    h5:(font-size:18px,font-weight:500,margin:0),
+    p: (font-size:16px,font-weight:300,margin:0,line-height:25px)
+  ),
+  xs:(
+    h1:(font-size: 52px, font-weight:300, ),
+    h3:(font-size:22px,font-weight:300,margin:0),
+    h5:(font-size:18px,font-weight:500,margin:0),
+    p: (font-size:16px,font-weight:300,margin:0,line-height:25px)
+  ),
+  cs:(
+    h1:(font-size: 52px, font-weight:300, ),
+    h3:(font-size:22px,font-weight:300,margin:0),
+    h5:(font-size:18px,font-weight:500,margin:0),
+    p: (font-size:16px,font-weight:300,margin:0,line-height:25px)
+  )
+);
+//end:font-sizes
+
+//start:text-helpers
+$text-align:(
+  center,
+  left,
+  right,
+);
+
+//start:btn-base
+$btn-base:(
+  padding: 22px 43px,
+  text-align: center,
+  border-radius: 6px,
+  cursor: pointer,
+  font-size: 16pt,
+  font-weight:500,
+  border: none);
+//end:btn-base
+//start:buttons
+$buttons:(
+  btn--green: (background:$green, color:white),
+  btn--outline:(background:none, color:$link,border:2px solid $btn-outline-border)
+);
+//end:buttons

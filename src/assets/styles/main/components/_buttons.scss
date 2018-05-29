@@ -1,0 +1,25 @@
+@import './_button-base.scss';
+@import './../_mixins.scss';
+@mixin create-btn($background, $color, $border:null) {
+  @extend .btn;
+  background: $background;
+  color: $color;
+  border: $border;
+  &:hover {
+    cursor: pointer;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $light-gray;
+  }
+}
+
+@each $key,
+$value in $buttons {
+  .#{$key} {
+    $background: map-get($value, 'background');
+    $color: map-get($value, 'color');
+    $border: map-get($value, 'border');
+    @include create-btn($background, $color, $border);
+  }
+}

@@ -1,0 +1,13 @@
+@mixin button-base() {
+    .btn {
+        @each $key,
+        $value in $btn-base {
+            #{$key}: #{$value}
+        }
+        &--full-width {
+            width: 100%;
+        }
+    }
+}
+
+@include button-base();

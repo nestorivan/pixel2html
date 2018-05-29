@@ -1,0 +1,14 @@
+.subfooter {
+  background: $dark-gray;
+  padding-top: 150px;
+  &__button-container {
+    margin: 50px 0 80px;
+  }
+  &__logos {
+    padding: 50px 0;
+    img {
+      margin: 0 50px;
+      height: 35px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import './../grid/_media-queries.scss';
+.info {
+  margin: 65px 0;
+  padding: 20px 0;
+  &__section {
+    display: flex;
+    flex: 1 0 33%;
+    @include cs-xs {
+      margin-top: 20px;
+      flex-basis: 100%;
+    }
+    @include xs-sm {
+      margin-top: 20px;
+      flex-basis: 100%;
+    }
+  }
+  &__image {
+    padding: 0 30px;
+    img {
+      @include cs-xs {
+        display: block;
+        margin: 0 auto;
+      }
+      @include xs-sm {
+        display: block;
+        margin: 0 auto;
+      }
+      @include lg {
+        height: 60px;
+      }
+    }
+  }
+  &__text {
+    flex-direction: column;
+    h5 {
+      margin-bottom: 8px;
+    }
+    @include cs-xs {
+      text-align: center;
+    }
+    @include xs-sm {
+      text-align: center;
+    }
+  }
+}

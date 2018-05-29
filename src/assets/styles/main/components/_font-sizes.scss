@@ -1,0 +1,56 @@
+@import './../grid/_media-queries.scss';
+
+@mixin font-size($map) {
+  @if($map) {
+    @each $key,
+    $value in $map {
+      #{$key} {
+        @each $key,
+        $value in $value {
+          #{$key}: #{$value}
+        }
+      }
+    }
+  }
+}
+
+@each $key,
+$value in $breakpoints {
+  @if($key=='cs') {
+    @include cs {
+      $map: if(map-has-key($font-sizes, #{$key}), map-get($font-sizes, #{$key}),null);
+      @include font-size($map)
+    }
+  }
+  @if($key=='xs') {
+    @include xs {
+      $map: if(map-has-key($font-sizes, #{$key}), map-get($font-sizes, #{$key}),null);
+      @include font-size($map)
+    }
+  }
+  @if($key=='sm') {
+    @include sm {
+      $map: if(map-has-key($font-sizes, #{$key}), map-get($font-sizes, #{$key}),null);
+      @include font-size($map)
+    }
+  }
+  @if($key=='md') {
+    @include md {
+      $map: if(map-has-key($font-sizes, #{$key}), map-get($font-sizes, #{$key}),null);
+      @include font-size($map)
+    }
+  }
+  @if($key=='lg') {
+    @include lg {
+      $map: if(map-has-key($font-sizes, #{$key}), map-get($font-sizes, #{$key}),null);
+      @include font-size($map)
+    }
+  }
+}
+
+// @each $key,$value in $font-sizes{
+//   #{$key}{
+//     @each $key,$value in $value{
+//       #{$key}: #{$value}
+//     }
+//   }
