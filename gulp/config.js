@@ -40,6 +40,7 @@ module.exports = {
     jsMainFile: 'src/assets/js/index.js',
     fontFiles: [
       'node_modules/slick-carousel/slick/fonts/**/*',
+      'node_modules/font-awesome/fonts/**/*',
       'src/assets/fonts/**/*'
     ]
   },

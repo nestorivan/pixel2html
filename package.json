@@ -21,6 +21,7 @@
     "@pixel2html/scripts-frontend": "^0.3.3",
     "del": "^3.0.0",
     "flex-grill": "^0.0.2",
+    "font-awesome": "^4.7.0",
     "fs-path": "^0.0.24",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",

@@ -12,10 +12,7 @@ const carousel = $('.carousel');
 $(carousel).slick({
   slidesToScroll: 1,
   dots: true,
-  centerMode: true,
   focusOnSelect: true,
-  autoplay: true,
-  arrows: true
 });
 
 $(document).ready(() => {
