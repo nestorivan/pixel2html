@@ -8,14 +8,17 @@
     @include cs-xs {
       margin-top: 20px;
       flex-basis: 100%;
+      padding: 20px 0;
     }
     @include xs-sm {
       margin-top: 20px;
       flex-basis: 100%;
+      padding: 20px;
     }
   }
   &__image {
     padding: 0 30px;
+    width: 30%;
     img {
       @include cs-xs {
         display: block;
@@ -29,16 +32,37 @@
         height: 60px;
       }
     }
+    @include cs-xs {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+    }
+    @include xs-sm {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+    }
+    @include sm-md {
+      padding: 0 15px;
+    }
+    @include lg {
+      height: 60px;
+    }
   }
   &__text {
-    flex-direction: column;
+    width: 70%;
     h5 {
       margin-bottom: 8px;
     }
     @include cs-xs {
+      width: 100%;
       text-align: center;
     }
     @include xs-sm {
+      width: 100%;
+      text-align: center;
+    }
+    @include sm-md {
       text-align: center;
     }
   }

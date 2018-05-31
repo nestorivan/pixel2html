@@ -12,9 +12,23 @@ const carousel = $('.carousel__container');
 $(carousel).slick({
   slidesToScroll: 1,
   dots: true,
-  focusOnSelect: true,
+  centerMode: false,
   appendDots: '.carousel__dots-container',
-  dotsClass: 'carousel__dots'
+  dotsClass: 'carousel__dots',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false
+      }
+    }
+  ]
 });
 
 $(document).ready(() => {
