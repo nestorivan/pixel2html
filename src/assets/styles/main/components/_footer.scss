@@ -1,32 +1,50 @@
 .footer {
-  background: $darkest-gray;
-  color: $light-gray;
-  padding: 50px 0 80px;
-  &__logo-container {
-    max-width: 80px;
-    max-height: 80px;
-    display: inline-block;
-    margin-right: 30px;
-  }
-  &__logo-text{
-    display: inline-block;
-    max-width: 350px;
-    max-height: 80px;
-  }
-  &__logo-background {
-    position: relative;
-  }
-  &__logo {
-    position: relative;
-    bottom: 50px;
-    left: 20px;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    li {
-      font-weight: 300;
-      margin: 20px 0 0 0;
+    background: $darkest-gray;
+    color: $light-gray;
+    padding: 50px 0 80px;
+    &__logo-container {
+        max-width: 80px;
+        max-height: 80px;
+        display: inline-block;
     }
-  }
+    &__logo-text {
+        display: inline-block;
+        max-width: 70%;
+        min-width: 70%;
+        max-height: 80px;
+        margin-left: auto;
+        @include lg {
+            margin-left:30px;
+        }
+    }
+    &__logo-background {
+        position: relative;
+    }
+    &__logo {
+        position: relative;
+        bottom: 50px;
+        left: 20px;
+    }
+    &__menu-container {
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                font-weight: 300;
+                margin: 20px 0 0 0;
+            }
+        }
+        @include cs-xs {
+            padding-top: 60px;
+        }
+        @include xs-sm {
+            padding-top: 60px;
+        }
+        @include sm-md {
+            padding-top: 60px;
+        }
+    }
+    &__language {
+        margin-left: auto;
+    }
 }

@@ -6,7 +6,9 @@
     &.reverse {
         flex-direction: row-reverse;
     }
-
+    &.nowrap{
+      flex-wrap: nowrap;
+    }
 }
 
 .finline { display: inline-flex; }
