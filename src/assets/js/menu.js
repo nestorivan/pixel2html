@@ -1,5 +1,3 @@
-import {$} from 'jquery';
-
 const menu = () => {
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
