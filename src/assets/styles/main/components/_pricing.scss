@@ -13,6 +13,15 @@
         margin: 0 auto;
         top: 150px;
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        @include cs-xs {
+            box-shadow: none;
+        }
+        @include xs-sm {
+            box-shadow: none;
+        }
+        @include sm-md {
+            box-shadow: none;
+        }
     }
     &__plan-header {
         padding: 20px 0;
@@ -33,13 +42,16 @@
         display: inline-block;
         flex-grow: 1;
         @include cs-xs {
-            margin-top: 10px;
+            margin-top: 15px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
         }
         @include xs-sm {
-            margin-top: 10px;
+            margin-top: 15px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
         }
         @include sm-md {
-            margin-top: 10px;
+            margin-top: 15px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
         }
         &.first {
             border-top-left-radius: 6px;

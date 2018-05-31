@@ -7,12 +7,14 @@ import pricing from './pricing';
 
 allTheColors.map(color => console.log(`The color is ${color}`))
 
-const carousel = $('.carousel');
+const carousel = $('.carousel__container');
 
 $(carousel).slick({
   slidesToScroll: 1,
   dots: true,
   focusOnSelect: true,
+  appendDots: '.carousel__dots-container',
+  dotsClass: 'carousel__dots'
 });
 
 $(document).ready(() => {
