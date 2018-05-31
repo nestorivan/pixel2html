@@ -29,7 +29,7 @@ const pricing = () => {
       }
 
       for (let listItem of listItems) {
-        listItem.style.color = 'white '
+        listItem.style.color = 'white';
       }
     })
 
@@ -60,7 +60,11 @@ const pricing = () => {
       }
 
       for (let listItem of listItems) {
-        listItem.style.color = 'initial'
+        listItem
+          .classList
+          .contains('disabled')
+          ? listItem.style.color = '#86939e'
+          : listItem.style.color = 'initial';
       }
     })
   }

@@ -1,9 +1,11 @@
 // Here we are importing the whole app read more about modules here:
 // http://wesbos.com/javascript-modules/
+import 'babel-polyfill';
 import $ from 'jquery';
 import 'slick-carousel';
 import allTheColors from './app';
 import pricing from './pricing';
+import menu from './menu';
 
 allTheColors.map(color => console.log(`The color is ${color}`))
 
@@ -33,4 +35,5 @@ $(carousel).slick({
 
 $(document).ready(() => {
   pricing();
+  menu();
 })
